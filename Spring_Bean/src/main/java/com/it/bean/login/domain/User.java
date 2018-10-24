@@ -3,7 +3,7 @@ package com.it.bean.login.domain;
 public class User {
 
 	private String id; 
-	private String userName; //用户名
+	private String userName; //用户名  
 	private String loginName; //登陆名
 
 	public String getUserName() {
