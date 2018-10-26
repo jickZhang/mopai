@@ -1,10 +1,23 @@
+server:
+  port: 8088
 spring:
+  application:
+    name: spring_boot_config
   cloud:
     config:
       server:
         git:
           uri: https://github.com/jickZhang/mopai.git
-          search-paths: 
-           
+          search-paths: Spring_Boot_Config
+          default-label: master
+          
+eureka:
+  client:
+    service-url:                                                            # eureka 要实现健康检查需要导入  spring-boot-starter-actuator 包
+      defaultZone: http://admin:123456@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+
     
  
