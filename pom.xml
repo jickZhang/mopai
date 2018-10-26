@@ -40,5 +40,6 @@
 		<module>Spring_Boot_Project</module>
 		<module>Spring_Eureka</module>
 		<module>Spring_Boot_User</module>
+		<module>Spring_boot_Config</module>
 	</modules>
 </project>
