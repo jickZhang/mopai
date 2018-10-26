@@ -10,7 +10,8 @@ spring:
           uri: https://github.com/jickZhang/mopai.git
           search-paths: Spring_Boot_Config
           default-label: master
-          
+          username: jickZhang
+          password: Zhangchao123
 eureka:
   client:
     service-url:                                                            # eureka 要实现健康检查需要导入  spring-boot-starter-actuator 包
