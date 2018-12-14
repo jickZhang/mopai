@@ -5,6 +5,7 @@ public class User {
 	private String id; 
 	private String userName; //用户名  
 	private String loginName; //登陆名
+	private String age;
 
 	public String getUserName() {
 		return userName;
@@ -28,6 +29,14 @@ public class User {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
 	}
 
 }
