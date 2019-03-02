@@ -1,5 +1,6 @@
 package com.it.boot.user;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -8,6 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("user")
 public class UserController {
     
+	@Value("${fileName}")
+	private String fileName;
 	
 	@RequestMapping("getUsers")
 	@ResponseBody
@@ -21,6 +24,13 @@ public class UserController {
 	public String getUsersById() {
 		System.out.println("****************************feign-UserService**************************");
 		return "feign-user";
+	}
+	
+	@RequestMapping("geConfigFileName")
+	@ResponseBody
+	public String geConfigFileName() {
+		System.out.println("从远程SpringBootConfig服务端获取到的fileName="+fileName);
+		return fileName;
 	}
 	
 }
