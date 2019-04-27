@@ -5,7 +5,7 @@ public class User {
 	private String id; 
 	private String userName; //用户名  
 	private String loginName; //登陆名
-	private String age;      //年龄   
+	private String age;      //年龄   服务器端修改
 
 	public String getUserName() {
 		return userName;
