@@ -3,9 +3,9 @@ package com.it.bean.login.domain;
 public class User {
 
 	private String id; 
-	private String userName; //用户名  
+	private String userName;  //用户名  
 	private String loginName; //登陆名
-	private String age;      //年龄  
+	private String age;       //年龄
 
 	public String getUserName() {
 		return userName;
